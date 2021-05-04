@@ -8,3 +8,4 @@ Temp/
 UserSettings/
 Assembly-CSharp.csproj
 Falling Blocks Game.sln
+*.meta
