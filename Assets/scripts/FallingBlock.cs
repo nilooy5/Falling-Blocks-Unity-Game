@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FallingBlock : MonoBehaviour {
     // Start is called before the first frame update
-    float speed = 5;
+    float speed = 10;
     void Start() {
         
     }

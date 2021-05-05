@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingBlockPrefab: {fileID: 8250602116179221968, guid: 239e10195877269498888698deae0ebd, type: 3}
+  spawnSizeMinMax: {x: 0.3, y: 2.3}
 --- !u!4 &1276535233
 Transform:
   m_ObjectHideFlags: 0
