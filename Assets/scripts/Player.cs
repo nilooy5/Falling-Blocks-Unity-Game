@@ -25,4 +25,10 @@ public class Player : MonoBehaviour {
             transform.position = new Vector2 (-screenHalfWithInWorldUnits, transform.position.y);
         }
     }
+    void OnTriggerEnter2D(Collider2D other) {
+        // print(other.gameObject.name);
+        if (other.gameObject.tag == "fallingBlock") {
+            Destroy (gameObject);
+        }
+    }
 }
