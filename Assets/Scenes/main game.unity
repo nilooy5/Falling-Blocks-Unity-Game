@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingBlockPrefab: {fileID: 8250602116179221968, guid: 239e10195877269498888698deae0ebd, type: 3}
+  secondsBetweenSpawnMinMax: {x: 0.1, y: 1}
   spawnSizeMinMax: {x: 0.3, y: 2.3}
 --- !u!4 &1276535233
 Transform:
@@ -292,7 +293,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415032313}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

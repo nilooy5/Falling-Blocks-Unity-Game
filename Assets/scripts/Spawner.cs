@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour {
     public GameObject fallingBlockPrefab;
-    float secondsBetweenSpawn = 0.5f;
+    public Vector2 secondsBetweenSpawnMinMax;
     float nextSpawnTime;
     Vector2 screenHalfSizeWorldUnits;
     float blockHeight;
@@ -19,6 +19,8 @@ public class Spawner : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (Time.time > nextSpawnTime) {
+            float secondsBetweenSpawn = Mathf.Lerp(secondsBetweenSpawnMinMax.y, secondsBetweenSpawnMinMax.x, Difficulty.GetDifficultyPercent());
+            print(secondsBetweenSpawn);
             nextSpawnTime = Time.time + secondsBetweenSpawn;
 
             float spawnSize = Random.Range(spawnSizeMinMax.x, spawnSizeMinMax.y);
